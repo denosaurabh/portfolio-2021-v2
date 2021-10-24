@@ -1,4 +1,4 @@
-import { DefaultSeo } from 'next-seo';
+import { NextSeo } from 'next-seo';
 
 import { globalStyles } from '@styled';
 import Page from '@layouts/page';
@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
   globalStyles();
   return (
     <Page>
-      <DefaultSeo {...SEO} />
+      <NextSeo {...SEO} />
       <Component {...pageProps} />
     </Page>
   );

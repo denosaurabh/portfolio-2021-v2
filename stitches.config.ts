@@ -25,7 +25,7 @@ export const {
   },
   media: {
     ['mobile-small']: '(max-width: 300px)',
-    mobile: '(max-width: 480px)',
+    mobile: '(max-width: 500px)',
     tablet: '(max-width: 768px)',
     laptop: '(max-width: 1024px)',
     desktop: '(max-width: 1200px)',
@@ -101,6 +101,10 @@ export const globalStyles = globalCss({
   },
   '::-webkit-scrollbar-track': {
     borderRadius: '10px',
+
+    '&:hover': {
+      width: '10px',
+    },
   },
   '::-webkit-scrollbar-thumb': {
     background: '$textColor',

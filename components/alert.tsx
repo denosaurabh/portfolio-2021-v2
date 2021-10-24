@@ -2,10 +2,7 @@ import { styled } from '@styled';
 
 const Alert = () => {
   return (
-    <AlertStyled className="alert">
-      My recent Talk:{' '}
-      <b>The Ultimate Toolkit for Lazy React Developer 2021</b>
-    </AlertStyled>
+    <AlertStyled className="alert">Currently Building! 🚀🐱‍🐉</AlertStyled>
   );
 };
 
@@ -17,6 +14,9 @@ const AlertStyled = styled('div', {
   // margin: '5rem 0',
 
   backgroundColor: '$alertBg',
+  // backgroundColor: '#e9c46a',
+
+  outline: '3px solid #ff9500',
   borderRadius: '1.2rem',
   filter: 'drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.05))',
 

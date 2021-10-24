@@ -17,6 +17,8 @@
     "paths": {
       "@components/*": ["components/*"],
       "@layouts/*": ["layouts/*"],
+      "@data/*": ["data/*"],
+      "@type/*": ["type/*"],
       "@styled": ["./stitches.config.ts"]
     }
   },

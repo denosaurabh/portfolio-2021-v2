@@ -89,7 +89,7 @@ const TechnologiesBox = styled('div', {
   p: {
     fontSize: '2.4rem',
     fontWeight: '500',
-    color: '#BABABA',
+    color: '#BABABA', // #BABABA #5C5C5C
     textTransform: 'uppercase',
 
     transition: 'all 0.3s ease-in-out',
