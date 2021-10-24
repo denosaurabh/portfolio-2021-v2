@@ -69,9 +69,9 @@ export const globalStyles = globalCss({
     backgroundColor: '$bg',
   },
   body: {
+    position: 'relative',
     margin: '0 auto',
     padding: '2rem',
-    maxWidth: '60rem',
   },
   a: {
     textDecoration: 'none',
@@ -93,13 +93,17 @@ export const globalStyles = globalCss({
     fontStyle: 'normal',
   },
   '::-webkit-scrollbar': {
-    width: '3px',
+    width: '6px',
+
+    '&:hover': {
+      width: '10px',
+    },
   },
   '::-webkit-scrollbar-track': {
     borderRadius: '10px',
   },
   '::-webkit-scrollbar-thumb': {
-    background: '$grey-800',
+    background: '$textColor',
     borderRadius: '10px',
   },
 });

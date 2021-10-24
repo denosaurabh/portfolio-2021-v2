@@ -2,7 +2,7 @@ import { styled } from '@styled';
 
 const Description = () => {
   return (
-    <DescriptionStyled>
+    <DescriptionStyled className="description">
       <h6>Multi Disciplinary developer from India</h6>
       <p>
         Although, I have worked on full-stack applications in the past and still
@@ -20,7 +20,7 @@ const DescriptionStyled = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   gap: '2.5rem',
-  marginBottom: '12rem',
+  // marginBottom: '12rem',
 
   fontSize: '1.6rem',
 

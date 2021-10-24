@@ -1,8 +1,17 @@
+import { DefaultSeo } from 'next-seo';
+
 import { globalStyles } from '@styled';
+import Page from '@layouts/page';
+import SEO from '../next-seo.config';
 
 function MyApp({ Component, pageProps }) {
   globalStyles();
-  return <Component {...pageProps} />;
+  return (
+    <Page>
+      <DefaultSeo {...SEO} />
+      <Component {...pageProps} />
+    </Page>
+  );
 }
 
 export default MyApp;

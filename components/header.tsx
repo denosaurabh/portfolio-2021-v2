@@ -3,7 +3,7 @@ import { styled } from '@styled';
 
 const Header = () => {
   return (
-    <HeaderStyled>
+    <HeaderStyled className="header">
       <HeaderLeftBox>
         <img src="/img/deno.webp" alt="denosaurabh" width={35} height={35} />
         <p>@denosaurabh</p>

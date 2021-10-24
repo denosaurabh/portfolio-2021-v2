@@ -1,8 +1,8 @@
-import { styled } from '@stitches/react';
+import { styled } from '@styled';
 
 const Projects = () => {
   return (
-    <ProjectsContainer>
+    <ProjectsContainer className="projects">
       <h6>2021 Projects</h6>
 
       <ProjectBox>
@@ -25,6 +25,8 @@ const Projects = () => {
         <h5>RHINO</h5>
         <span>JUN 2021</span>
       </ProjectBox>
+
+      <Span>Check out more projects &rarr;</Span>
     </ProjectsContainer>
   );
 };
@@ -35,11 +37,14 @@ const ProjectsContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
 
+  // marginBottom: '12rem',
+
   h6: {
     fontSize: '1.5rem',
-    marginBottom: '3rem',
     fontWeight: '500',
     color: '#2E2E2E',
+
+    marginBottom: '3rem',
   },
 });
 
@@ -59,6 +64,11 @@ const ProjectBox = styled('div', {
 
   span: {
     fontSize: '1.5rem',
-    color: ' #6B6B6B',
+    color: '#5D5D5D',
   },
+});
+
+const Span = styled('span', {
+  fontSize: '1.5rem',
+  color: '$textColor',
 });
