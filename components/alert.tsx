@@ -2,7 +2,9 @@ import { styled } from '@styled';
 
 const Alert = () => {
   return (
-    <AlertStyled className="alert"><b>NEW!</b> Currently Building! 🚀🐱‍🐉</AlertStyled>
+    <AlertStyled className="alert">
+      <b>NOTICE!</b> Currently Building this new Portfolio Site! 🚀
+    </AlertStyled>
   );
 };
 

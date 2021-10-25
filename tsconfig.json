@@ -20,6 +20,8 @@
       "@data/*": ["data/*"],
       "@type/*": ["type/*"],
       "@shared/*": ["shared/*"],
+      "@state/*": ["state/*"],
+      "@svg/*": ["svg/*"],
       "@styled": ["./stitches.config.ts"]
     }
   },

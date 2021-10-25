@@ -1,9 +1,24 @@
+import { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-
 import { styled } from '@styled';
 
+import useNav from '@state/nav';
+
+import NavSvg from '@svg/Hamburger.svg';
+import CrossSvg from '@svg/Cross.svg';
+
 const Header = () => {
+  const { showNavButton, showNav, setShowNav, setShowNavButton } = useNav(
+    (state) => state
+  );
+
+  useEffect(() => {
+    if (!window) return;
+
+    setShowNavButton(window.innerWidth <= 460);
+  }, []);
+
   return (
     <HeaderStyled className="header">
       <HeaderLeftBox>
@@ -21,12 +36,21 @@ const Header = () => {
         </Link>
       </HeaderLeftBox>
 
-      <Nav>
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/projects">Projects</Link>
-        <Link href="/contact">Contact</Link>
-      </Nav>
+      {showNavButton || (
+        <Nav>
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/projects">Projects</Link>
+          <Link href="/contact">Contact</Link>
+        </Nav>
+      )}
+
+      {showNavButton && !showNav ? (
+        <NavSvgStyled onClick={() => setShowNav(true)} />
+      ) : null}
+      {showNavButton && showNav ? (
+        <CrossSvgStyled onClick={() => setShowNav(false)} />
+      ) : null}
     </HeaderStyled>
   );
 };
@@ -65,4 +89,22 @@ const Nav = styled('nav', {
   'a:last-child': {
     fontWeight: '600',
   },
+});
+
+const NavSvgStyled = styled(NavSvg, {
+  '&:hover': {
+    cursor: 'pointer',
+  },
+  zIndex: 100,
+});
+
+const CrossSvgStyled = styled(CrossSvg, {
+  position: 'fixed',
+  top: '3%',
+  right: '5%',
+
+  '&:hover': {
+    cursor: 'pointer',
+  },
+  zIndex: 100,
 });

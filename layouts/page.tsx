@@ -2,13 +2,21 @@ import { styled } from '@styled';
 
 import Header from '@components/header';
 import Footer from '@components/footer';
+import Nav from '@components/nav';
+
+import useNav from '@state/nav';
 
 const Page = ({ children }) => {
+  const { showNav } = useNav(({ showNav }) => ({
+    showNav,
+  }));
+
   return (
     <Container>
       <Header />
       {children}
       <Footer />
+      {showNav && <Nav />}
     </Container>
   );
 };
@@ -35,33 +43,24 @@ const Container = styled('div', {
     gridColumn: '2 / 3',
   },
 
-  '.header': {
-    gridRow: '1 / 2',
-  },
+  '.header': {},
 
   '.alert': {
-    gridRow: '2 / 3',
-
     margin: '5rem 0',
   },
 
   '.description': {
-    gridRow: '3 / 4',
     marginBottom: '12rem',
   },
 
   '.projects': {
-    gridRow: '4 / 5',
     marginBottom: '12rem',
   },
 
-  '.tech-heading': {
-    gridRow: '5 / 6',
-  },
+  '.tech-heading': {},
 
   '.technologies': {
     gridColumn: '1 / 3',
-    gridRow: '6 / 7',
     marginBottom: '24rem',
   },
 
