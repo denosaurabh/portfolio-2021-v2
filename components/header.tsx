@@ -1,19 +1,31 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
 import { styled } from '@styled';
 
 const Header = () => {
   return (
     <HeaderStyled className="header">
       <HeaderLeftBox>
-        <img src="/img/deno.webp" alt="denosaurabh" width={35} height={35} />
-        <p>@denosaurabh</p>
+        <Link href="/">
+          <Image
+            src="/img/deno.webp"
+            alt="denosaurabh"
+            width={35}
+            height={35}
+          />
+        </Link>
+
+        <Link href="/" passHref>
+          <a>@denosaurabh</a>
+        </Link>
       </HeaderLeftBox>
 
       <Nav>
         <Link href="/">Home</Link>
-        <Link href="/">About</Link>
-        <Link href="/">Blogs</Link>
-        <Link href="/">Contact</Link>
+        <Link href="/about">About</Link>
+        <Link href="/projects">Projects</Link>
+        <Link href="/contact">Contact</Link>
       </Nav>
     </HeaderStyled>
   );
@@ -29,6 +41,10 @@ const HeaderStyled = styled('header', {
   alignItems: 'end',
 
   color: '$textColor',
+
+  img: {
+    cursor: 'pointer',
+  },
 });
 
 const HeaderLeftBox = styled('div', {

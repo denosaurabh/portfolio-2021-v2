@@ -1,4 +1,4 @@
-import { styled } from '@styled';
+import { keyframes, styled } from '@styled';
 
 const Technologies = () => {
   return (
@@ -11,6 +11,7 @@ const Technologies = () => {
           <p>ReactJS</p>
           <p>Typescript</p>
           <p>Firebase</p>
+          <p>Supabase</p>
           <p>ChakraUI</p>
           <p>Framer Motion</p>
           <p>ThreeJS</p>
@@ -20,7 +21,7 @@ const Technologies = () => {
           <p>Tooling</p>
           <p>Redux</p>
           <p>VueJS</p>
-          <p>Deployment</p>
+          <p>Vercel</p>
           <p>Git</p>
           <p>NodeJS</p>
           <p>Databases</p>
@@ -72,6 +73,11 @@ const TechnologiesContainer = styled('div', {
   },
 });
 
+const TechAnimation = keyframes({
+  from: { opacity: '0' },
+  to: { opacity: '1' },
+});
+
 const TechnologiesBox = styled('div', {
   display: 'flex',
   alignItems: 'center',
@@ -92,7 +98,7 @@ const TechnologiesBox = styled('div', {
     color: '#BABABA', // #BABABA #5C5C5C
     textTransform: 'uppercase',
 
-    transition: 'all 0.3s ease-in-out',
+    transition: 'color 0.3s ease-in-out',
 
     '&:hover': {
       color: '#31362F',

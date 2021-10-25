@@ -47,8 +47,6 @@ export const globalStyles = globalCss({
     fontSize: '62.5%',
     fontFamily: '$main',
     fontWeight: 400,
-    // fontdispla
-    // textRendering: 'optimizeLegibility',
 
     overflowX: 'hidden',
 
@@ -69,7 +67,6 @@ export const globalStyles = globalCss({
     backgroundColor: '$bg',
   },
   body: {
-    position: 'relative',
     margin: '0 auto',
     padding: '2rem',
   },

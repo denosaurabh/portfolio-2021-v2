@@ -1,13 +1,16 @@
+import Link from 'next/link';
 import { styled } from '@styled';
 
 const Contact = () => {
   return (
     <ContactContaier className="contact">
       <p>
-        I am more than happy to work with <br /> artists, creative agencies & small
-        startups.
+        I am more than happy to work with <br /> artists, creative agencies &
+        small startups.
       </p>
-      <h6>CONTACT</h6>
+      <h6>
+        <Link href="/contact">CONTACT</Link>
+      </h6>
       <span>denosaurabh@gmail.com</span>
     </ContactContaier>
   );
@@ -34,6 +37,10 @@ const ContactContaier = styled('div', {
     fontSize: '8rem',
     textDecoration: 'underline',
     color: '$textColorDark',
+
+    '&:hover': {
+      cursor: 'pointer',
+    }
   },
 
   span: {

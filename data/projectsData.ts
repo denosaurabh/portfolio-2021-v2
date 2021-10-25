@@ -36,7 +36,7 @@ const projectsData: ProjectBox[] = [
   },
   {
     title: 'Rhino',
-    description: 'Website About extincting Rhinos',
+    description: 'Website about extincting Rhinos',
     date: 'Jun 2021',
     tech: ['NextJS', 'ThreeJS', 'RThreeFiber'],
     link: 'https://rhino-threejs.vercel.app',

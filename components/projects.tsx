@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { styled } from '@styled';
 import ProjectBox from '@components/projectBox';
 
@@ -12,7 +13,7 @@ const Projects = () => {
         <ProjectBox {...project} key={i} />
       ))}
 
-      <Span>Check out more projects &rarr;</Span>
+      <Link href="/projects">Check out more projects &rarr;</Link>
     </ProjectsContainer>
   );
 };
@@ -30,9 +31,9 @@ const ProjectsContainer = styled('div', {
 
     marginBottom: '3rem',
   },
-});
 
-const Span = styled('span', {
-  fontSize: '1.5rem',
-  color: '$textColor',
+  a: {
+    fontSize: '1.5rem',
+    color: '$textColor',
+  },
 });

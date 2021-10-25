@@ -19,6 +19,7 @@
       "@layouts/*": ["layouts/*"],
       "@data/*": ["data/*"],
       "@type/*": ["type/*"],
+      "@shared/*": ["shared/*"],
       "@styled": ["./stitches.config.ts"]
     }
   },

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { styled } from '@styled';
 
 const Description = () => {
@@ -5,11 +6,20 @@ const Description = () => {
     <DescriptionStyled className="description">
       <h6>Multi Disciplinary developer from India</h6>
       <p>
-        Although, I have worked on full-stack applications in the past and still
-        sometimes do. But Nowadays, my main expertise comes in creative frontend
-        end development with vast modern libraries & frameworks.
+        Hi, I am Saurabh Gupta, An Independent Front End developer & designer
+        from India. I strive for simplicity, originality using cutting edge
+        tools to provide memorable experience.
+        <br />
+        <br />
+        While enjoying this path for the past 3+ years, I have gained enormus
+        knowlege & skills by working on wide varities of projects ranging from
+        small creative projects to full fledge complex applications.
+        <br />
+        <br />
+        When I am not programming I spend time playing video games, curating
+        design & art inspirations and going for a long walk.
       </p>
-      <span>more about me &nbsp; &rarr;</span>
+      <Link href="/about">more about me &nbsp; &rarr;</Link>
     </DescriptionStyled>
   );
 };
@@ -25,17 +35,18 @@ const DescriptionStyled = styled('div', {
   fontSize: '1.6rem',
 
   h6: {
-    fontSize: '1.7rem',
+    fontSize: '1.8rem',
     fontWeight: '550',
     color: '$textColorDark',
   },
 
   p: {
+    fontSize: '1.7rem',
     color: '$textColor',
     lineHeight: '24px',
   },
 
-  span: {
+  a: {
     fontWeight: '450',
     fontSize: '1.6rem',
   },

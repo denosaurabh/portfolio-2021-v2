@@ -10,19 +10,20 @@ const ProjectBox = ({
   github,
   link,
 }: ProjectBoxProps) => {
-  const [isHover, setHover] = useState(false);
+  const [isActive, setActive] = useState(false);
 
   return (
     <ProjectBoxStyled
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
+      // onMouseEnter={() => setHover(true)}
+      // onMouseLeave={() => setHover(false)}
+      onClick={() => setActive(!isActive)}
     >
       <TopBox>
         <h5>{title}</h5>
         <span>{date}</span>
       </TopBox>
-      <p style={{ display: isHover ? 'block' : 'none' }}> {description}</p>
-      <BottomBox hide={isHover}>
+      <p style={{ display: isActive ? 'block' : 'none' }}> {description}</p>
+      <BottomBox hide={isActive}>
         <div className="tech">
           {tech.map((t, i) => (
             <span key={i}>{t}</span>
@@ -76,6 +77,10 @@ const TopBox = styled('div', {
 
     textTransform: 'uppercase',
   },
+
+  '&:hover': {
+    cursor: 'pointer',
+  },
 });
 
 const BottomBox = styled('div', {
@@ -85,9 +90,9 @@ const BottomBox = styled('div', {
 
   '.tech': {
     display: 'grid',
-    gridTemplateColumns: 'repeat(4, minmax(2rem, 1fr))',
+    gridTemplateColumns: 'repeat(4, auto)',
     gridTemplateRows: 'repeat(2, 3rem)',
-    gap: '1rem',
+    gap: '2rem',
 
     span: {
       fontSize: '1.5rem',
