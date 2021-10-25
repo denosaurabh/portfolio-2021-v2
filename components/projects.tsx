@@ -1,19 +1,26 @@
 import Link from 'next/link';
 import { styled } from '@styled';
 import ProjectBox from '@components/projectBox';
+import { ProjectBox as ProjectBoxProps } from '@type/project';
 
-import projectsData from '@data/projectsData';
+interface ProjectsProps {
+  showMoreProjectsLink?: boolean;
+  data: ProjectBoxProps[];
+  title: string;
+}
 
-const Projects = () => {
+const Projects = ({ showMoreProjectsLink, title, data }: ProjectsProps) => {
   return (
     <ProjectsContainer className="projects">
-      <h6>2021 Projects</h6>
+      <h6>{title}</h6>
 
-      {projectsData.map((project, i) => (
+      {data.map((project, i) => (
         <ProjectBox {...project} key={i} />
       ))}
 
-      <Link href="/projects">Check out more projects &rarr;</Link>
+      {showMoreProjectsLink && (
+        <Link href="/projects">Check out more projects &rarr;</Link>
+      )}
     </ProjectsContainer>
   );
 };

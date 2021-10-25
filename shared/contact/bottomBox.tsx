@@ -1,9 +1,15 @@
 import { styled } from '@styled';
 
 const BottomBox = () => {
+  const onEmailClick = async () => {
+    if (!window) return;
+
+    await window.navigator.clipboard.writeText('denosaurabh@gmail.com');
+  };
+
   return (
     <BottomBoxStyled className="bottom-box">
-      <h4>denosaurabh@gmail.com</h4>
+      <h4 onClick={onEmailClick}>denosaurabh@gmail.com</h4>
     </BottomBoxStyled>
   );
 };

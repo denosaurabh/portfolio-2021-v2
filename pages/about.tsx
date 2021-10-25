@@ -28,6 +28,10 @@ const AboutContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   gap: '5rem',
+
+  img: {
+    borderRadius: '1.5rem',
+  },
 });
 
 const Heading = styled('h1', {

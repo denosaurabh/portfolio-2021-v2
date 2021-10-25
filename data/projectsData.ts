@@ -1,6 +1,6 @@
 import { ProjectBox } from '@type/project';
 
-const projectsData: ProjectBox[] = [
+export const projectsData2021: ProjectBox[] = [
   {
     title: 'Atmos',
     description: 'Full fledge for buying & selling online courses',
@@ -21,7 +21,7 @@ const projectsData: ProjectBox[] = [
     title: 'Nature',
     description:
       'Explore Nature, Alien Life and Environment on far moons & planets',
-      date: 'Sep 2021',
+    date: 'Sep 2021',
     tech: ['NextJS', 'Framer', 'Stitches'],
     link: 'https://nature-cyan.vercel.app',
     github: 'https://github.com/DenoSaurabh/nature',
@@ -44,4 +44,29 @@ const projectsData: ProjectBox[] = [
   },
 ];
 
-export default projectsData;
+export const projectsData2020: ProjectBox[] = [
+  {
+    title: 'React CRWN',
+    description: 'Project I made during learning React ecosystem',
+    date: 'Mar 2020',
+    tech: ['REACT', 'Stripe', 'Styled-Components', 'Firebase'],
+    link: 'https://react-crwn-project.herokuapp.com/',
+    github: 'https://github.com/DenoSaurabh/react-bootcamp',
+  },
+  {
+    title: 'Trello',
+    description: 'Project made during course to master Advance CSS',
+    date: 'May 2020',
+    tech: ['Html', 'Css', 'SCSS', 'Webpack', 'Babel'],
+    link: 'https://denosaurabh.github.io/trillo-hotel.github.io',
+    github: 'https://github.com/DenoSaurabh/trillo-hotel.github.io',
+  },
+  {
+    title: 'Natours',
+    description: 'Website for booking Nature tours',
+    date: 'Jan 2020',
+    tech: ['HTML', 'CSS'],
+    link: 'https://denosaurabh.github.io/natours-sass.github.io/#',
+    github: 'https://github.com/DenoSaurabh/natours-sass.github.io',
+  },
+];

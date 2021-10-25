@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { styled } from '@styled';
 import { ProjectBox as ProjectBoxProps } from '@type/project';
 
+import useCurrentProject from '@state/currentProject';
+
 const ProjectBox = ({
   title,
   description,
@@ -10,20 +12,25 @@ const ProjectBox = ({
   github,
   link,
 }: ProjectBoxProps) => {
-  const [isActive, setActive] = useState(false);
+  const { currentProject, setCurrentProject } = useCurrentProject(
+    (state) => state
+  );
 
   return (
     <ProjectBoxStyled
       // onMouseEnter={() => setHover(true)}
       // onMouseLeave={() => setHover(false)}
-      onClick={() => setActive(!isActive)}
+      onClick={() => setCurrentProject(currentProject === title ? '' : title)}
     >
       <TopBox>
         <h5>{title}</h5>
         <span>{date}</span>
       </TopBox>
-      <p style={{ display: isActive ? 'block' : 'none' }}> {description}</p>
-      <BottomBox hide={isActive}>
+      <p style={{ display: currentProject === title ? 'block' : 'none' }}>
+        {' '}
+        {description}
+      </p>
+      <BottomBox hide={currentProject === title}>
         <div className="tech">
           {tech.map((t, i) => (
             <span key={i}>{t}</span>

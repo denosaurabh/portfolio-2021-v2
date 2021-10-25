@@ -22,13 +22,15 @@ const Header = () => {
   return (
     <HeaderStyled className="header">
       <HeaderLeftBox>
-        <Link href="/">
-          <Image
-            src="/img/deno.webp"
-            alt="denosaurabh"
-            width={35}
-            height={35}
-          />
+        <Link href="/" passHref>
+          <a style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <Image
+              src="/img/deno.webp"
+              alt="denosaurabh"
+              width={35}
+              height={35}
+            />
+          </a>
         </Link>
 
         <Link href="/" passHref>

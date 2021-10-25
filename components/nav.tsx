@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { styled } from '@styled';
+import { keyframes, styled } from '@styled';
 
 import useNav from '@state/nav';
 
@@ -26,6 +26,15 @@ const Nav = () => {
 
 export default Nav;
 
+const FadeIn = keyframes({
+  from: {
+    opacity: 0,
+  },
+  to: {
+    opacity: 1,
+  },
+});
+
 const NavContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
@@ -43,6 +52,8 @@ const NavContainer = styled('div', {
 
   userSelect: 'none',
   overflow: 'hidden',
+
+  animation: `${FadeIn} 0.5s ease-in-out`,
 
   zIndex: 50,
 

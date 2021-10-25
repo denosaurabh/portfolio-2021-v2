@@ -1,7 +1,12 @@
+import { useState } from 'react';
 import { styled } from '@styled';
+
 import Projects from '@components/projects';
+import { projectsData2021, projectsData2020 } from '@data/projectsData';
 
 const ProjectsPage = () => {
+  const [showOldProjects, setShowOldProjects] = useState(false);
+
   return (
     <ProjectsContainer>
       <Heading>
@@ -15,7 +20,16 @@ const ProjectsPage = () => {
           Space
         </a>
       </Heading>
-      <Projects />
+      <Projects data={projectsData2021} key={1} title="2021 Projects" />
+      <Projects data={projectsData2020} key={2} title="2020 Projects" />
+
+      <Span onClick={() => setShowOldProjects(!showOldProjects)}>
+        My 2019 Projects are too old to look at, but if you want to check them
+        out &rarr;
+      </Span>
+      {showOldProjects && (
+        <Projects data={projectsData2020} key={3} title="2019 Projects" />
+      )}
     </ProjectsContainer>
   );
 };
@@ -38,5 +52,16 @@ const Heading = styled('h1', {
 
   a: {
     textDecoration: 'underline',
+  },
+});
+
+const Span = styled('span', {
+  fontSize: '1.8rem',
+  color: '$textColor',
+
+  marginBottom: '5rem',
+
+  '&:hover': {
+    cursor: 'pointer',
   },
 });
