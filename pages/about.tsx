@@ -9,7 +9,7 @@ const About = () => {
         src="/img/me.webp"
         alt="Denosaurabh smiling at front of camera"
         width={500}
-        height={500}
+        height={700}
         objectFit="cover"
       />
       <Description>
