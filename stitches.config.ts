@@ -15,7 +15,7 @@ export const {
 } = createStitches({
   theme: {
     fonts: {
-      main: `ClashGrotesk-Variable, ${fallbackFonts}`,
+      main: `ClashGrotesk-Variable`,
 
       websafe: `-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif`,
     },
