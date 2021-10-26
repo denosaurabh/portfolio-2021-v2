@@ -25,6 +25,7 @@ const Technologies = () => {
           <p>Git</p>
           <p>NodeJS</p>
           <p>Databases</p>
+          <p>GraphQL</p>
           <p>CMS</p>
         </TechnologiesBox>
 
