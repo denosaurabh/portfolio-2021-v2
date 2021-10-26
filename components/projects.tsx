@@ -7,11 +7,17 @@ interface ProjectsProps {
   showMoreProjectsLink?: boolean;
   data: ProjectBoxProps[];
   title: string;
+  css?: Record<string, unknown>;
 }
 
-const Projects = ({ showMoreProjectsLink, title, data }: ProjectsProps) => {
+const Projects = ({
+  showMoreProjectsLink,
+  title,
+  data,
+  css,
+}: ProjectsProps) => {
   return (
-    <ProjectsContainer className="projects">
+    <ProjectsContainer className="projects" css={css}>
       <h6>{title}</h6>
 
       {data.map((project, i) => (

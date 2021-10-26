@@ -9,8 +9,9 @@ const About = () => {
         src="/img/me.webp"
         alt="Denosaurabh smiling at front of camera"
         width={500}
-        height={700}
+        height={800}
         objectFit="cover"
+        quality={100}
       />
       <Description>
         I am a 17 y'old developer who loves to code. I have a passion for web

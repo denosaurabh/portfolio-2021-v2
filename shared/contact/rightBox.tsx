@@ -1,15 +1,26 @@
 import { styled } from '@styled';
+import useCursorAlert from '@state/coursorAlert';
 
 const RightBox: React.FC = () => {
+  const { setAlert } = useCursorAlert(({ setAlert }) => ({ setAlert }));
+
+  const onDiscordClick = async () => {
+    if (!window) return;
+
+    await window.navigator.clipboard.writeText('denosaurabh#8275');
+
+    setAlert('Discord ID Copied!');
+  };
+
   return (
     <InfoContainer className="right-box">
       <InfoBox>
         <span>Timezone</span>
         <p>GMT +5:30 </p>
       </InfoBox>
-      <InfoBox>
+      <InfoBox onClick={onDiscordClick}>
         <span>Discord</span>
-        <p>denosaurabh#8275</p>
+        <p style={{ cursor: 'pointer' }}>denosaurabh#8275</p>
       </InfoBox>
       <InfoBox>
         <span>Resume</span>

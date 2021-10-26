@@ -3,6 +3,7 @@ export interface ProjectBox {
   description: string;
   date: string;
   tech: string[];
-  github: string;
-  link: string;
+  github?: string;
+  link?: string;
+  inDevelopment?: boolean;
 }

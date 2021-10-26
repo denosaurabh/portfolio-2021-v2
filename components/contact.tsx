@@ -1,7 +1,19 @@
 import Link from 'next/link';
 import { styled } from '@styled';
 
+import useCursorAlert from '@state/coursorAlert';
+
 const Contact = () => {
+  const { setAlert } = useCursorAlert(({ setAlert }) => ({ setAlert }));
+
+  const onEmailClick = async () => {
+    if (!window) return;
+
+    await window.navigator.clipboard.writeText('denosaurabh@gmail.com');
+
+    setAlert('Email Copied!');
+  };
+
   return (
     <ContactContaier className="contact">
       <p>
@@ -9,9 +21,9 @@ const Contact = () => {
         small startups.
       </p>
       <h6>
-        <Link href="/contact">CONTACT</Link>
+        <Link href="/contact">REACH OUT</Link>
       </h6>
-      <span>denosaurabh@gmail.com</span>
+      <span onClick={onEmailClick}>denosaurabh@gmail.com</span>
     </ContactContaier>
   );
 };
@@ -40,11 +52,15 @@ const ContactContaier = styled('div', {
 
     '&:hover': {
       cursor: 'pointer',
-    }
+    },
   },
 
   span: {
     fontSize: '2rem',
     color: '$textColor',
+
+    '&:hover': {
+      cursor: 'pointer',
+    },
   },
 });

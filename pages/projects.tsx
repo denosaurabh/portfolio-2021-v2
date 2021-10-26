@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { styled } from '@styled';
 
 import Projects from '@components/projects';
-import { projectsData2021, projectsData2020 } from '@data/projectsData';
+import { projectsData2021, projectsData2020, projectsData2019 } from '@data/projectsData';
 
 const ProjectsPage = () => {
   const [showOldProjects, setShowOldProjects] = useState(false);
@@ -22,14 +22,14 @@ const ProjectsPage = () => {
       </Heading>
       <Projects data={projectsData2021} key={1} title="2021 Projects" />
       <Projects data={projectsData2020} key={2} title="2020 Projects" />
-
-      <Span onClick={() => setShowOldProjects(!showOldProjects)}>
-        My 2019 Projects are too old to look at, but if you want to check them
-        out &rarr;
-      </Span>
       {showOldProjects && (
-        <Projects data={projectsData2020} key={3} title="2019 Projects" />
+        <Projects data={projectsData2019} key={3} title="2019 Projects" />
       )}
+      <Span onClick={() => setShowOldProjects(!showOldProjects)}>
+        {/* My 2019 Projects are too old to look at, but if you want to check them
+        out &rarr; */}
+        {!showOldProjects ? 'Show' : 'Hide'} archived & oldest projects &rarr;
+      </Span>
     </ProjectsContainer>
   );
 };
@@ -41,6 +41,10 @@ const ProjectsContainer = styled('div', {
 
   display: 'flex',
   flexDirection: 'column',
+
+  '.projects': {
+    marginBottom: '6rem',
+  },
 });
 
 const Heading = styled('h1', {

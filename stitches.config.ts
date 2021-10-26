@@ -1,5 +1,8 @@
 import { createStitches } from '@stitches/react';
 
+const fallbackFonts =
+  '-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif';
+
 export const {
   styled,
   css,
@@ -12,7 +15,7 @@ export const {
 } = createStitches({
   theme: {
     fonts: {
-      main: 'ClashGrotesk-Variable',
+      main: `ClashGrotesk-Variable, ${fallbackFonts}`,
 
       websafe: `-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif`,
     },

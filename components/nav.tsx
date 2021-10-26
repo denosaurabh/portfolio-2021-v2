@@ -18,7 +18,7 @@ const Nav = () => {
         <a onClick={() => setShowNav(false)}>Projects</a>
       </Link>
       <Link href="/contact" passHref>
-        <a onClick={() => setShowNav(false)}>Contact</a>
+        <a onClick={() => setShowNav(false)}>Reach out</a>
       </Link>
     </NavContainer>
   );

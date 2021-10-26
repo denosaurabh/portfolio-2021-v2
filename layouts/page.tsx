@@ -3,6 +3,7 @@ import { styled } from '@styled';
 import Header from '@components/header';
 import Footer from '@components/footer';
 import Nav from '@components/nav';
+import Cursor from '@components/cursor';
 
 import useNav from '@state/nav';
 
@@ -13,6 +14,7 @@ const Page = ({ children }) => {
 
   return (
     <Container>
+      <Cursor />
       <Header />
       {children}
       <Footer />

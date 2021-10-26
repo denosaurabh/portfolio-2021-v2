@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { styled } from '@styled';
 import { ProjectBox as ProjectBoxProps } from '@type/project';
 
@@ -11,6 +10,7 @@ const ProjectBox = ({
   tech,
   github,
   link,
+  inDevelopment,
 }: ProjectBoxProps) => {
   const { currentProject, setCurrentProject } = useCurrentProject(
     (state) => state
@@ -18,13 +18,32 @@ const ProjectBox = ({
 
   return (
     <ProjectBoxStyled
+      className="project-box"
       // onMouseEnter={() => setHover(true)}
       // onMouseLeave={() => setHover(false)}
-      onClick={() => setCurrentProject(currentProject === title ? '' : title)}
     >
       <TopBox>
-        <h5>{title}</h5>
-        <span>{date}</span>
+        <TopLeftBox
+          onClick={() =>
+            setCurrentProject(currentProject === title ? '' : title)
+          }
+        >
+          <h5>{title}</h5>
+          <span>{date}</span>
+          {inDevelopment && <span className="dev">In Development</span>}
+        </TopLeftBox>
+        <TopRightBox className="project-top-right-box">
+          {link && (
+            <a href={link} target="_blank" rel="noreferrer">
+              Live
+            </a>
+          )}
+          {github && (
+            <a href={github} target="_blank" rel="noreferrer">
+              Github
+            </a>
+          )}
+        </TopRightBox>
       </TopBox>
       <p style={{ display: currentProject === title ? 'block' : 'none' }}>
         {' '}
@@ -38,12 +57,21 @@ const ProjectBox = ({
         </div>
 
         <div className="links">
-          <a className="link" href={link} target="_blank" rel="noreferrer">
-            Link
-          </a>
-          <a className="github" href={github} target="_blank" rel="noreferrer">
-            Github
-          </a>
+          {link && (
+            <a className="link" href={link} target="_blank" rel="noreferrer">
+              Link
+            </a>
+          )}
+          {github && (
+            <a
+              className="github"
+              href={github}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
+          )}
         </div>
       </BottomBox>
     </ProjectBoxStyled>
@@ -67,6 +95,22 @@ const ProjectBoxStyled = styled('div', {
 
 const TopBox = styled('div', {
   display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+
+  '&:hover': {
+    cursor: 'pointer',
+
+    '.project-top-right-box': {
+      opacity: 1,
+    },
+  },
+});
+
+const TopLeftBox = styled('div', {
+  flex: 1,
+
+  display: 'flex',
   alignItems: 'baseline',
   gap: '2rem',
 
@@ -74,6 +118,14 @@ const TopBox = styled('div', {
     fontSize: '5rem',
     fontWeight: '800',
     color: '#424242',
+
+    maxWidth: '34rem',
+
+    // wordBreak: 'keep-all',
+    // wordWrap: 'none',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
 
     textTransform: 'uppercase',
   },
@@ -85,8 +137,42 @@ const TopBox = styled('div', {
     textTransform: 'uppercase',
   },
 
-  '&:hover': {
-    cursor: 'pointer',
+  '.dev': {
+    padding: '0.7rem 1rem',
+    border: '1px solid #424242',
+    borderRadius: '2rem',
+
+    fontSize: '1.5rem',
+    color: '$textColor',
+    lineHeight: '11px',
+  },
+});
+
+const TopRightBox = styled('div', {
+  opacity: 0,
+  transition: 'opacity 0.2s',
+
+  display: 'flex',
+  alignItems: 'center',
+  gap: '2rem',
+
+  '@tablet': {
+    display: 'none',
+  },
+
+  a: {
+    padding: '0.7rem 1rem',
+    border: '1px solid #424242',
+    borderRadius: '2rem',
+
+    fontSize: '1.5rem',
+    color: '$textColor',
+
+    transition: 'transform 0.14s',
+
+    '&:hover': {
+      transform: 'translateY(-5px)',
+    },
   },
 });
 
@@ -94,6 +180,7 @@ const BottomBox = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
+  gap: '2rem',
 
   '.tech': {
     display: 'grid',
