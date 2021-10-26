@@ -14,8 +14,19 @@ const About = () => {
         quality={100}
       />
       <Description>
-        I am a 17 y'old developer who loves to code. I have a passion for web
-        development and love to learn new technologies.
+        I started this journey in 2018 when I was just 14 years old, I started
+        learning PHP as a curiosity for programming. Later I learned some CSS &
+        JS. My first project was a simple Note making app and a Quiz app.
+        <br />
+        <br />
+        I continued learning more and more and started working on my side
+        projects. Recently is the moment where I finally understood what I want
+        to follow.
+        <br />
+        <br />
+        Nowadays, I am building my big side project including Atmos & Space,
+        trying to finish my last year at high school, and ready to kickstart my
+        career in this industry.
         <br />
         <br />
         <span className="i">portfolio still in development ...</span>

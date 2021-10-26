@@ -84,7 +84,7 @@ export const projectsData2019: ProjectBox[] = [
   {
     title: 'Stone Paper Scissor',
     description: 'as you would have guessed..',
-    date: 'Oct 2019',
+    date: 'Oct 2018',
     tech: ['React JS'],
     link: 'https://thirsty-heisenberg-ba589f.netlify.app',
     github: 'https://github.com/DenoSaurabh/stone-paper-scissor-reactapp',
@@ -92,7 +92,7 @@ export const projectsData2019: ProjectBox[] = [
   {
     title: 'Card Game',
     description: 'Fun project I made for practicing react',
-    date: 'Sep 2019',
+    date: 'Sep 2018',
     tech: ['React', 'Typescript'],
     link: 'https://heuristic-goldwasser-31429c.netlify.app/',
     github: 'https://github.com/DenoSaurabh/cardgame-reactapp',
@@ -100,7 +100,7 @@ export const projectsData2019: ProjectBox[] = [
   {
     title: 'Self Driving Car',
     description: 'School Science Exhibition Project',
-    date: 'Nov 2019',
+    date: 'Nov 2018',
     tech: ['React', 'NodeJS', 'Express', 'SocketIO', 'MaterialUI'],
     link: 'https://self-driving-car-webapp.netlify.app/',
     github: 'https://github.com/DenoSaurabh/self-driving-car-webapp',
@@ -116,7 +116,7 @@ export const projectsData2019: ProjectBox[] = [
   {
     title: 'Notes App',
     description: 'My First Project in Programming ever',
-    date: 'Sep 2019',
+    date: 'Sep 2018',
     tech: ['HTML', 'CSS', 'JS'],
     github: 'https://github.com/DenoSaurabh/notes-app',
   },
