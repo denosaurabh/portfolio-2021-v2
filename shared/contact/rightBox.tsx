@@ -24,7 +24,14 @@ const RightBox: React.FC = () => {
       </InfoBox>
       <InfoBox>
         <span>Resume</span>
-        <p style={{ textDecoration: 'underline' }}>Download</p>
+        <a
+          href="https://read.cv/denosaurabh"
+          target="_blank"
+          rel="noreferrer"
+          style={{ textDecoration: 'underline' }}
+        >
+          Link
+        </a>
       </InfoBox>
     </InfoContainer>
   );
@@ -49,7 +56,7 @@ const InfoBox = styled('div', {
     color: '$textColor',
   },
 
-  p: {
+  'p, a': {
     fontSize: '1.6rem',
     fontWeight: '450',
     color: '$textColorDark',
