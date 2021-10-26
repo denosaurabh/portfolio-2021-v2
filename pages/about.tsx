@@ -6,10 +6,10 @@ const About = () => {
     <AboutContainer>
       <Heading>{new Date().getFullYear() - 2004} y'old Developer</Heading>
       <Image
-        src="/img/me.webp"
+        src="/img/me.jpg"
         alt="Denosaurabh smiling at front of camera"
         width={500}
-        height={800}
+        height={700}
         objectFit="cover"
         quality={100}
       />

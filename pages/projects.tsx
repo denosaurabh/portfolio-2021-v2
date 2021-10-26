@@ -2,7 +2,11 @@ import { useState } from 'react';
 import { styled } from '@styled';
 
 import Projects from '@components/projects';
-import { projectsData2021, projectsData2020, projectsData2019 } from '@data/projectsData';
+import {
+  projectsData2021,
+  projectsData2020,
+  projectsData2019,
+} from '@data/projectsData';
 
 const ProjectsPage = () => {
   const [showOldProjects, setShowOldProjects] = useState(false);
@@ -10,14 +14,23 @@ const ProjectsPage = () => {
   return (
     <ProjectsContainer>
       <Heading>
-        Creater of Open Source Project &rarr;
+        Currently Building &rarr;
         {/* <a href="https://github.com/denosaurabh/space">Atmos</a> & */}{' '}
+        <br />
         <a
           href="https://github.com/denosaurabh/space"
           target="_blank"
           rel="noreferrer"
         >
           Space
+        </a>
+        <br />
+        <a
+          href="https://atmos-deno.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Atmos
         </a>
       </Heading>
       <Projects data={projectsData2021} key={1} title="2021 Projects" />

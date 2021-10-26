@@ -3,7 +3,7 @@ import { ProjectBox } from '@type/project';
 export const projectsData2021: ProjectBox[] = [
   {
     title: 'Atmos',
-    description: 'Full fledge for buying & selling online courses',
+    description: 'Full fledge application for buying & selling online courses',
     date: 'Oct 2021',
     tech: ['NEXTJS', 'Stripe', 'ChakraUI', 'Supabase', 'Redis'],
     link: 'https://atmos-deno.vercel.app/',
@@ -65,7 +65,7 @@ export const projectsData2020: ProjectBox[] = [
   {
     title: 'Natours',
     description: 'Website for booking Nature tours',
-    date: 'Jan 2020',
+    date: 'June 2020',
     tech: ['HTML', 'CSS'],
     link: 'https://denosaurabh.github.io/natours-sass.github.io/#',
     github: 'https://github.com/DenoSaurabh/natours-sass.github.io',

@@ -48,7 +48,7 @@ const Cursor: React.FC = () => {
         // transition: 'top 0.2s ease-in-out 0s, left 0.2s ease-in-out 0s',
       }}
     >
-      {alert && <ALertMessage>{alert}</ALertMessage>}
+      {alert && <AlertMessage>{alert}</AlertMessage>}
     </div>
   );
 };
@@ -70,10 +70,12 @@ const FadeIn = keyframes({
   },
 });
 
-const ALertMessage = styled('span', {
+const AlertMessage = styled('span', {
   fontSize: '1.7rem',
   fontWeight: '450',
   color: '$textColor',
+
+  whiteSpace: 'nowrap',
 
   padding: '0.7rem 1.2rem',
   borderRadius: '2rem',

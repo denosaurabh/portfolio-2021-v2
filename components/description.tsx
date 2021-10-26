@@ -7,8 +7,8 @@ const Description = () => {
       <h6>Multi Disciplinary developer from India</h6>
       <p>
         Hi, I am Saurabh Gupta, An Independent Front End developer & designer
-        from India. I strive for simplicity, originality using cutting edge
-        tools to provide memorable experience.
+        living in India. I strive for simplicity, originality using cutting edge
+        tools like NextJS .
         <br />
         <br />
         While enjoying this path for the past 3+ years, I have gained enormus
