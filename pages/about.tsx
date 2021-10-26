@@ -16,6 +16,9 @@ const About = () => {
       <Description>
         I am a 17 y'old developer who loves to code. I have a passion for web
         development and love to learn new technologies.
+        <br />
+        <br />
+        <span className="i">portfolio still in development ...</span>
       </Description>
     </AboutContainer>
   );
@@ -44,4 +47,8 @@ const Description = styled('p', {
   fontSize: '1.8rem',
   fontWeight: '400',
   lineHeight: '28px',
+
+  '.i': {
+    fontStyle: 'italic',
+  },
 });
