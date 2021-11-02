@@ -60,7 +60,7 @@ export default Technologies;
 const TechHeading = styled('h6', {
   fontSize: '1.5rem',
   fontWeight: '500',
-  color: '#2E2E2E',
+  color: '$textColor',
 
   marginBottom: '3rem',
 });

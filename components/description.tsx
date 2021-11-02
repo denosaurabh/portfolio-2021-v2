@@ -7,17 +7,17 @@ const Description = () => {
       <h6>Multi Disciplinary developer from India</h6>
       <p>
         Hi, I am Saurabh Gupta, An Independent Front End developer & designer
-        living in India. I strive for simplicity, originality using cutting edge
-        tools like NextJS .
+        living in India. I strive for simplicity, originality using cutting-edge
+        tools like NextJS.
         <br />
         <br />
-        While enjoying this path for the past 3+ years, I have gained enormus
-        knowlege & skills by working on wide varities of projects ranging from
-        small creative projects to full fledge complex applications.
+        While enjoying this path for the past 3+ years, I have gained enormous
+        knowledge & skills by working on wide varieties of projects ranging from
+        small creative projects to full-fledged complex applications.
         <br />
         <br />
         When I am not programming I spend time playing video games, curating
-        design & art inspirations and going for a long walk.
+        design & art inspirations, and going for a long walk.
       </p>
       <Link href="/about">more about me &nbsp; &rarr;</Link>
     </DescriptionStyled>
@@ -49,5 +49,6 @@ const DescriptionStyled = styled('div', {
   a: {
     fontWeight: '450',
     fontSize: '1.6rem',
+    color: '$textColorDark',
   },
 });

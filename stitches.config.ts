@@ -15,7 +15,7 @@ export const {
 } = createStitches({
   theme: {
     fonts: {
-      main: `ClashGrotesk-Variable`,
+      main: `ClashGrotesk-Variable, ${fallbackFonts}`,
 
       websafe: `-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif`,
     },
@@ -36,6 +36,15 @@ export const {
   },
 });
 
+export const darkTheme = createTheme({
+  colors: {
+    bg: '#2d2d2d',
+    textColor: '#d4d6d4',
+    textColorDark: '#d4d6d4',
+    alertBg: '#DEDEDE',
+  },
+});
+
 export const globalStyles = globalCss({
   '*': {
     margin: 0,
@@ -50,6 +59,9 @@ export const globalStyles = globalCss({
     fontSize: '62.5%',
     fontFamily: '$main',
     fontWeight: 400,
+
+    // fontStretch: '140%',
+    // fontOpticalSizing: 'auto',
 
     overflowX: 'hidden',
 
@@ -68,10 +80,13 @@ export const globalStyles = globalCss({
   },
   html: {
     backgroundColor: '$bg',
+
+    [`.${darkTheme}`]: {
+      backgroundColor: '$bg',
+    },
   },
   body: {
     margin: '0 auto',
-    padding: '2rem',
   },
   a: {
     textDecoration: 'none',

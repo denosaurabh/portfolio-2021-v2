@@ -1,4 +1,4 @@
-import { styled } from '@styled';
+import { darkTheme, styled } from '@styled';
 
 import Header from '@components/header';
 import Footer from '@components/footer';
@@ -13,7 +13,9 @@ const Page = ({ children }) => {
   }));
 
   return (
-    <Container>
+    <Container
+    // className={darkTheme}
+    >
       <Cursor />
       <Header />
       {children}
@@ -28,6 +30,8 @@ export default Page;
 const Container = styled('div', {
   width: '100%',
   height: 'auto',
+
+  padding: '2rem',
 
   display: 'grid',
   gridTemplateColumns: '1fr minmax(600px, 1fr) 1fr',

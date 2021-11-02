@@ -52,12 +52,14 @@ const AboutContainer = styled('div', {
 const Heading = styled('h1', {
   fontSize: '4rem',
   fontWeight: '600',
+  color: '$textColorDark',
 });
 
 const Description = styled('p', {
   fontSize: '1.8rem',
   fontWeight: '400',
   lineHeight: '28px',
+  color: '$textColor',
 
   '.i': {
     fontStyle: 'italic',

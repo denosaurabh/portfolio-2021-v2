@@ -20,10 +20,12 @@
       "@data/*": ["data/*"],
       "@type/*": ["type/*"],
       "@shared/*": ["shared/*"],
+      "@discord/*": ["discord/*"],
       "@state/*": ["state/*"],
       "@svg/*": ["svg/*"],
       "@styled": ["./stitches.config.ts"]
-    }
+    },
+    "incremental": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
