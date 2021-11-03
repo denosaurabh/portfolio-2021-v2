@@ -22,6 +22,7 @@
       "@shared/*": ["shared/*"],
       "@discord/*": ["discord/*"],
       "@state/*": ["state/*"],
+      "@lib/*": ["lib/*"],
       "@svg/*": ["svg/*"],
       "@styled": ["./stitches.config.ts"]
     },

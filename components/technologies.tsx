@@ -1,4 +1,4 @@
-import { keyframes, styled } from '@styled';
+import { styled } from '@styled';
 
 const Technologies = () => {
   return (
@@ -26,6 +26,7 @@ const Technologies = () => {
           <p>NodeJS</p>
           <p>Databases</p>
           <p>GraphQL</p>
+          <p>Prisma</p>
           <p>CMS</p>
         </TechnologiesBox>
 
@@ -74,11 +75,6 @@ const TechnologiesContainer = styled('div', {
   },
 });
 
-const TechAnimation = keyframes({
-  from: { opacity: '0' },
-  to: { opacity: '1' },
-});
-
 const TechnologiesBox = styled('div', {
   display: 'flex',
   alignItems: 'center',
@@ -89,9 +85,16 @@ const TechnologiesBox = styled('div', {
   left: '0',
 
   width: '100vw',
-  padding: '1.5rem 0',
+  padding: '1.5rem 4rem',
+
+  overflowX: 'scroll',
 
   borderBottom: '1px solid #A5A5A5',
+
+  '@mobile': {
+    position: 'relative',
+    left: 'unset',
+  },
 
   p: {
     fontSize: '2.4rem',
@@ -104,5 +107,15 @@ const TechnologiesBox = styled('div', {
     '&:hover': {
       color: '#31362F',
     },
+  },
+
+  '&::-webkit-scrollbar': {
+    display: 'none',
+  },
+  '&::-webkit-scrollbar-track': {
+    display: 'none',
+  },
+  '&::-webkit-scrollbar-thumb': {
+    display: 'none',
   },
 });
