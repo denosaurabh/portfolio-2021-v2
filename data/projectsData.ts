@@ -2,6 +2,22 @@ import { ProjectBox } from '@type/project';
 
 export const projectsData2021: ProjectBox[] = [
   {
+    title: 'Quark',
+    description: 'NFT Marketplace in an interactive 3D Experience',
+    date: 'Dec 2021',
+    tech: [
+      'NEXTJS',
+      'React Three Fiber',
+      'ThreeJS',
+      'Firebase',
+      'Solidity',
+      'Ethereum',
+      'Hardhat',
+    ],
+    link: 'https://quark-deno.vercel.app/',
+    github: 'https://github.com/DenoSaurabh/quark',
+  },
+  {
     title: 'Atmos',
     description: 'Full fledge application for buying & selling online courses',
     date: 'Oct 2021',
