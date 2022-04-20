@@ -24,9 +24,8 @@ const About = () => {
         to follow.
         <br />
         <br />
-        Nowadays, I am building my big side project including Atmos & Space,
-        trying to finish my last year at high school, and ready to kickstart my
-        career in this industry.
+        Nowadays, I am working as frontend engineer for Horizon.io, working in web3 space and
+        trying to finish my last year at high school.
         <br />
         <br />
         <span className="i">portfolio still in development ...</span>

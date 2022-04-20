@@ -35,7 +35,6 @@ const Technologies = () => {
           <p>VueJS</p>
           <p>Vercel</p>
           <p>NodeJS</p>
-          <p>Databases</p>
           <p>GraphQL</p>
           <p>Prisma</p>
         </TechnologiesBox>
