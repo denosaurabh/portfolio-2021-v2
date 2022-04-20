@@ -11,7 +11,7 @@
   "dependencies": {
     "@prisma/client": "3.4.0",
     "@stitches/react": "^1.2.5",
-    "next": "11.1.2",
+    "next": "12.1.0",
     "next-seo": "^4.28.1",
     "preact": "^10.5.15",
     "react": "17.0.2",
