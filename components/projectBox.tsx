@@ -10,7 +10,6 @@ const ProjectBox = ({
   tech,
   github,
   link,
-  inDevelopment,
   status,
 }: ProjectBoxProps) => {
   const { currentProject, setCurrentProject } = useCurrentProject(
