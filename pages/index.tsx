@@ -15,7 +15,7 @@ export default function Home() {
       <Alert />
       <Description />
       <Projects
-        title="Projects 2021"
+        title="Top Projects"
         data={projectsData2021}
         showMoreProjectsLink
       />

@@ -2,6 +2,23 @@ import { ProjectBox } from '@type/project';
 
 export const projectsData2021: ProjectBox[] = [
   {
+    title: 'Public Sq.',
+    description: 'Bond of Science, Art and Philosophy',
+    date: 'Mar 2022',
+    tech: [
+      'NEXTJS',
+      'Lens Protocol',
+      'Apollo',
+      'GraphQL',
+      'Ethers',
+      'Solidity',
+      'Hardhat',
+      'Web3',
+    ],
+    link: 'https://publicsquare.vercel.app/',
+    github: 'https://github.com/DenoSaurabh/Public-Square/',
+  },
+  {
     title: 'Quark',
     description: 'NFT Marketplace in an interactive 3D Experience',
     date: 'Dec 2021',
@@ -24,7 +41,7 @@ export const projectsData2021: ProjectBox[] = [
     tech: ['NEXTJS', 'Stripe', 'ChakraUI', 'Supabase', 'Redis'],
     link: 'https://atmos-deno.vercel.app/',
     // github: 'https://github.com/DenoSaurabh/atmos',
-    inDevelopment: true,
+    status: 'abanboned',
   },
   {
     title: 'Space',

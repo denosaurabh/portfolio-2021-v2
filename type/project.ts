@@ -5,5 +5,5 @@ export interface ProjectBox {
   tech: string[];
   github?: string;
   link?: string;
-  inDevelopment?: boolean;
+  status?: string;
 }

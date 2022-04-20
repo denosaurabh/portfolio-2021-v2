@@ -24,9 +24,9 @@ const Projects = ({
         <ProjectBox {...project} key={i} />
       ))}
 
-      {showMoreProjectsLink && (
+      {/* {showMoreProjectsLink && (
         <Link href="/projects">Check out more projects &rarr;</Link>
-      )}
+      )} */}
     </ProjectsContainer>
   );
 };

@@ -7,6 +7,19 @@ const Technologies = () => {
 
       <TechnologiesContainer className="technologies">
         <TechnologiesBox>
+          <h6>&#8594;</h6>
+          <p>Web3</p>
+          <p>Solidity</p>
+          <p>Ethers</p>
+          <p>Hardhat</p>
+          <p>Lens Protocol</p>
+          <p>Internet Computer</p>
+          <p>Motoko</p>
+          <p>Rust</p>
+          <h6>&#8592;</h6>
+        </TechnologiesBox>
+
+        <TechnologiesBox>
           <p>NextJS</p>
           <p>ReactJS</p>
           <p>Typescript</p>
@@ -18,23 +31,19 @@ const Technologies = () => {
         </TechnologiesBox>
 
         <TechnologiesBox>
-          <p>Tooling</p>
           <p>Redux</p>
           <p>VueJS</p>
           <p>Vercel</p>
-          <p>Git</p>
           <p>NodeJS</p>
           <p>Databases</p>
           <p>GraphQL</p>
           <p>Prisma</p>
-          <p>CMS</p>
         </TechnologiesBox>
 
         <TechnologiesBox>
           <p>PostgreSQL</p>
           <p>Performance</p>
           <p>SEO</p>
-          <p>JWT</p>
           <p>Docker</p>
           <p>Redis</p>
           <p>SASS</p>
@@ -48,7 +57,6 @@ const Technologies = () => {
           <p>NPM</p>
           <p>PWA</p>
           <p>MobX</p>
-          <p>Responsiveness</p>
           <p>Stitches</p>
         </TechnologiesBox>
       </TechnologiesContainer>
@@ -94,6 +102,11 @@ const TechnologiesBox = styled('div', {
   '@mobile': {
     position: 'relative',
     left: 'unset',
+  },
+
+  h6: {
+    fontSize: '3rem',
+    color: '#5C5C5C',
   },
 
   p: {

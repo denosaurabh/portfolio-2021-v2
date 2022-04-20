@@ -11,6 +11,7 @@ const ProjectBox = ({
   github,
   link,
   inDevelopment,
+  status,
 }: ProjectBoxProps) => {
   const { currentProject, setCurrentProject } = useCurrentProject(
     (state) => state
@@ -30,7 +31,7 @@ const ProjectBox = ({
         >
           <h5>{title}</h5>
           <span>{date}</span>
-          {inDevelopment && <span className="dev">In Development</span>}
+          {status && <span className="dev">{status}</span>}
         </TopLeftBox>
         <TopRightBox className="project-top-right-box">
           {link && (
