@@ -38,7 +38,7 @@ trying to finish my last year at high school.
 [Other Technologies &#8594;](https://www.denosaurabh.me/)
 
 
-## Top Projects
+## Best Projects
 
 - [x] [Public Square](https://github.com/DenoSaurabh/Public-Square)
 - [x] [Quark](https://github.com/DenoSaurabh/quark)

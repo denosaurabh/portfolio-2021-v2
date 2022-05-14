@@ -18,6 +18,13 @@ const Description = () => {
         <br />
         When I am not programming I spend time playing video games, curating
         design & art inspirations, and going for a long walk.
+        <br />
+        <br />
+        Read my
+        <a href="https://read.cv/denosaurabh" target="_blank">
+          Resume
+        </a>
+        <br />
       </p>
       <Link href="/about">more about me &nbsp; &rarr;</Link>
     </DescriptionStyled>
@@ -50,5 +57,6 @@ const DescriptionStyled = styled('div', {
     fontWeight: '450',
     fontSize: '1.6rem',
     color: '$textColorDark',
+    textDecoration: 'underline',
   },
 });
