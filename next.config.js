@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['pbs.twimg.com'],
+    domains: ['pbs.twimg.com', 'cdn.discordapp.com', 'horizon.io'],
   },
   webpack: (config, { dev, isServer }) => {
     // // Replace React with PReact only in client production build

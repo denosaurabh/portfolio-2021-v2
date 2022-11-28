@@ -6,4 +6,5 @@ export interface ProjectBox {
   github?: string;
   link?: string;
   status?: string;
+  color?: string
 }

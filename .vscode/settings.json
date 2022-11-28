@@ -12,5 +12,6 @@
   },
   "[javascriptreact]": {
     "editor.autoClosingBrackets": "always"
-  }
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

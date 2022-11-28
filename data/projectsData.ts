@@ -2,6 +2,22 @@ import { ProjectBox } from '@type/project';
 
 export const projectsData2021: ProjectBox[] = [
   {
+    title: 'Niftyswap',
+    description:
+      'Buy and sell SFTs instantly. Niftyswap is a decentralized marketplace for Semi-Fungible Tokens (ERC-1155)',
+    date: 'Sep 2022',
+    tech: [
+      'ReactJS',
+      'Solidity',
+      'Micro Observables',
+      'Ethers',
+      'Solidity',
+      'Web3',
+    ],
+    link: 'https://niftyswap.io',
+    // color: '#303bff',
+  },
+  {
     title: 'Public Sq.',
     description: 'Bond of Science, Art and Philosophy',
     date: 'Mar 2022',

@@ -20,7 +20,17 @@ const Description = () => {
         design & art inspirations, and going for a long walk.
         <br />
         <br />
-        Read my
+        Currently building{' '}
+        <a target="_blank" href="https://niftyswap.io">
+          Niftyswap
+        </a>{' '}
+        at{' '}
+        <a target="_blank" href="https://horizon.io">
+          Horizon Blockchain Games
+        </a>
+        <br />
+        <br />
+        Read my &nbsp;
         <a href="https://read.cv/denosaurabh" target="_blank">
           Resume
         </a>
