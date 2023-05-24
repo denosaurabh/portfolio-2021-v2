@@ -49,14 +49,14 @@ const Footer = () => {
         </FooterBox>
       </LinksContainer>
       <BottomContainer>
-        <span>&copy; denosaurabh 2021</span>
+        <span>&copy; denosaurabh 2023</span>
         <span
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           style={{ cursor: 'pointer' }}
         >
           BACK TO TOP &uarr;
         </span>
-        <span>PORTOLIO 2021</span>
+        <span>PORTOLIO 2023</span>
       </BottomContainer>
     </FooterStyled>
   );
