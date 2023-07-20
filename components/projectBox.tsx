@@ -116,7 +116,7 @@ const TopLeftBox = styled('div', {
   gap: '2rem',
 
   h5: {
-    fontSize: '5rem',
+    fontSize: '4.4rem',
     fontWeight: '800',
     color: '#424242',
 

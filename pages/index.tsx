@@ -5,6 +5,7 @@ import Alert from '@components/alert';
 import Description from '@components/description';
 import Projects from '@components/projects';
 import Technologies from '@components/technologies';
+import Awards from '@components/awards';
 import Contact from '@components/contact';
 
 import { projectsData2021 } from '@data/projectsData';
@@ -20,6 +21,7 @@ export default function Home() {
         showMoreProjectsLink
       />
       <Technologies />
+      <Awards />
       <Contact />
 
       <GradientBox>

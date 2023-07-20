@@ -2,10 +2,30 @@ import { ProjectBox } from '@type/project';
 
 export const projectsData2021: ProjectBox[] = [
   {
+    title: 'AI Sandbox',
+    description:
+      'Enabling rapid prototyping of AI architectures through integrating AI models in a node base editor.',
+    date: 'June 2023',
+    tech: ['NextJS', 'React Flow', 'Tailwindcss', 'Zustand'],
+    link: 'https://aisandbox.app',
+    status: 'development',
+    // color: '#303bff',
+  },
+  {
+    title: 'Airliner',
+    description: 'Your CoPilot and Virtual ATC for Microsoft Flight Simulator.',
+    date: 'May 2023',
+    tech: ['NextJS', 'Svelte', 'Tauri', 'Tailwindcss'],
+    link: 'https://airliner.app',
+    status: 'development',
+    // color: '#303bff',
+  },
+  {
     title: 'Niftyswap',
     description:
       'Buy and sell SFTs instantly. Niftyswap is a decentralized marketplace for Semi-Fungible Tokens (ERC-1155)',
     date: 'Sep 2022',
+    status: 'development',
     tech: [
       'ReactJS',
       'Solidity',
@@ -15,6 +35,15 @@ export const projectsData2021: ProjectBox[] = [
       'Web3',
     ],
     link: 'https://niftyswap.io',
+    // color: '#303bff',
+  },
+  {
+    title: 'eAadhaar',
+    description:
+      'Verify your Aadhaar on Blockchain and generate verif iable claims for your data using @Polygon ID.',
+    date: 'May 2023',
+    tech: ['NextJS', 'ChakraUI', 'Polygon'],
+    link: 'https://crypto-pay-omega.vercel.app',
     // color: '#303bff',
   },
   {

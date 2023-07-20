@@ -67,6 +67,10 @@ const Container = styled('div', {
 
   '.technologies': {
     gridColumn: '1 / 3',
+    marginBottom: '10rem',
+  },
+
+  '.awards': {
     marginBottom: '24rem',
   },
 

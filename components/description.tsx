@@ -11,7 +11,7 @@ const Description = () => {
         tools like NextJS.
         <br />
         <br />
-        While enjoying this path for the past 3+ years, I have gained enormous
+        While enjoying this path for the past 4+ years, I have gained enormous
         knowledge & skills by working on wide varieties of projects ranging from
         small creative projects to full-fledged complex applications.
         <br />
@@ -24,10 +24,13 @@ const Description = () => {
         <a target="_blank" href="https://niftyswap.io">
           Niftyswap
         </a>{' '}
-        at{' '}
+        & <span style={{ filter: 'blur(1.5px)' }}>[SECRET]</span> at{' '}
         <a target="_blank" href="https://horizon.io">
           Horizon Blockchain Games
         </a>
+        <br />
+        <br />
+        Nowdays I am loving Computational Neuroscience & Cybersecurity :)
         <br />
         <br />
         Read my &nbsp;
